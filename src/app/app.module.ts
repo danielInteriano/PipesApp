@@ -3,9 +3,12 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 
+/*Módulo personalizado para primeNG*/
+import { PrimeNGModule } from './prime-ng/prime-ng.module';
+
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule],
+  imports: [BrowserModule, PrimeNGModule],
   providers: [],
   bootstrap: [AppComponent],
 })

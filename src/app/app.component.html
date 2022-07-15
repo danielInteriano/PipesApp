@@ -3,5 +3,45 @@
   <h1>{{ valor | number }}</h1>
   <h1>{{ objeto | json }}</h1>
 </div>
+<div class="row">
+  <!--Botón sin ícono y ejecuta una función-->
+  <button
+    pButton
+    type="button"
+    label="Cambiar Nombre"
+    (click)="mostrarNombre()"
+  ></button>
 
-<button (click)="mostrarNombre()">Cambiar Nombre</button>
+  <!--Botón con ícono-->
+  <button
+    pButton
+    pRipple
+    type="button"
+    label="Botón + Icono"
+    class="p-button-help m-i"
+    icon="pi pi-save"
+    iconPos="right"
+    (click)="mostrarNombre()"
+  ></button>
+</div>
+
+<div class="row m-t">
+  <p-card
+    [header]="nombre | titlecase"
+    subheader="Nombre y apellido"
+    [style]="{ width: '25rem', 'margin-bottom': '2em' }"
+  >
+    <ng-template pTemplate="header">
+      <img
+        alt="Card"
+        src="https://www.primefaces.org/primeng/assets/showcase/images/usercard.png"
+      />
+    </ng-template>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed
+      consequuntur error repudiandae numquam deserunt quisquam repellat libero
+      asperiores earum nam nobis, culpa ratione quam perferendis esse,
+      cupiditate neque quas!
+    </p>
+  </p-card>
+</div>
