@@ -37,6 +37,11 @@
         <li>Fecha date:'personalizado-números'</li>
         <li>Fecha date:'personalizado-texto'</li>
       </ul>
+      <hr />
+      <ul>
+        <li>Fecha date:'long':'timezone'</li>
+        <li>Fecha date:'long':'timezone':'locale'</li>
+      </ul>
     </p-card>
   </div>
   <div class="col-6">
@@ -48,6 +53,11 @@
         <li>{{ fecha | date: "long" }}</li>
         <li>{{ fecha | date: "dd/MM/YYYY" }}</li>
         <li>{{ fecha | date: "EEEE dd" + ", MMMM YYYY" }}</li>
+      </ul>
+      <hr />
+      <ul>
+        <li>{{ fecha | date: "long":"GMT-4" }}</li>
+        <li>{{ fecha | date: "long":"GMT-6":"fr" }}</li>
       </ul>
     </p-card>
   </div>
