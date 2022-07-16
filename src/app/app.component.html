@@ -1,10 +1,10 @@
-<div class="text-layout">
+<!-- <div class="text-layout">
   <h1>{{ nombre | titlecase }}</h1>
   <h1>{{ valor | number }}</h1>
   <h1>{{ objeto | json }}</h1>
-</div>
-<div class="row">
-  <!--Botón sin ícono y ejecuta una función-->
+</div> -->
+<!-- <div class="row">
+
   <button
     pButton
     type="button"
@@ -12,7 +12,7 @@
     (click)="mostrarNombre()"
   ></button>
 
-  <!--Botón con ícono-->
+
   <button
     pButton
     pRipple
@@ -23,9 +23,10 @@
     iconPos="right"
     (click)="mostrarNombre()"
   ></button>
-</div>
+</div> -->
 
-<div class="row m-t">
+<!-- <div class="row m-t">
+
   <p-card
     [header]="nombre | titlecase"
     subheader="Nombre y apellido"
@@ -44,4 +45,6 @@
       cupiditate neque quas!
     </p>
   </p-card>
-</div>
+</div> -->
+<app-menu></app-menu>
+<router-outlet></router-outlet>
