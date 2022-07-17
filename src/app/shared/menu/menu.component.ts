@@ -27,7 +27,7 @@ export class MenuComponent implements OnInit {
           },
           {
             label: 'No Comunes',
-            icon: 'pi pi-glove',
+            icon: 'pi pi-globe',
             routerLink: 'no-comunes',
           },
         ],
