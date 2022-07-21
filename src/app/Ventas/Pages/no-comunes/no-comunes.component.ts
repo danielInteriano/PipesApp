@@ -38,7 +38,7 @@ export class NoComunesComponent {
   };
 
   //i18nPlural
-  clientes: string[] = ['Ana', 'Lucia', 'Alicia'];
+  clientes: string[] = ['Ana', 'Lucia', 'Alicia', 'Carmen', 'Stephany'];
   clientesMapa = {
     '=0': 'no tenemos clientes esperando.',
     '=1': 'tenemos 1 cliente esperando.',
@@ -55,6 +55,10 @@ export class NoComunesComponent {
 
   showModalDialog() {
     this.displayModal = true;
+  }
+
+  cerrarModal() {
+    this.displayModal = false;
   }
 
   //metodos
