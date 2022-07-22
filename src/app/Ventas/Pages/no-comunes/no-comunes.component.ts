@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { PrimeNGConfig } from 'primeng/api';
+import { interval } from 'rxjs';
 
 @Component({
   selector: 'app-no-comunes',
@@ -80,6 +81,17 @@ export class NoComunesComponent {
       debilidad: 'sus amigos',
     },
   ];
+
+  //Pipe:Async
+  //El pipe se suscrite internamente y está emitiendo valores.
+  miObservable = interval(1000);
+
+  //fin Pipe: Async
+  valorPromesa = new Promise((resolve, rejects) => {
+    setTimeout(() => {
+      resolve('Tenemos data de la promesa');
+    }, 3500);
+  });
 
   constructor(private primengConfig: PrimeNGConfig) {}
 

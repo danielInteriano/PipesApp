@@ -65,4 +65,19 @@
       <pre>{{ heroes | json }}</pre>
     </p-fieldset>
   </div>
+
+  <!--JSON Pipe-->
+  <!--Permite presentar los atributos de un objeto que se recorre a través de un array *ngFor-->
+  <div class="col col-6">
+    <p-fieldset legend="Pipe: Async" [toggleable]="true">
+      <pre>Valores emitidos por el pipe Async: {{ miObservable | async }}</pre>
+      <hr />
+      <br />
+      <pre *ngIf="!(miObservable| async)">Resolviendo Observable</pre>
+      <hr />
+      <br />
+      <pre *ngIf="!(valorPromesa | async)">Resolviendo promesa</pre>
+      <pre>{{ valorPromesa | async }}</pre>
+    </p-fieldset>
+  </div>
 </div>
