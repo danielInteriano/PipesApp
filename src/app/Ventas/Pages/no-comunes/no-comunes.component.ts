@@ -45,6 +45,42 @@ export class NoComunesComponent {
     other: 'tenemos # clientes esperando.',
   };
 
+  //Pipe: KeyValue
+  persona = {
+    nombre: 'Daniel',
+    edad: 37,
+    direccion: 'Tegucigalpa, Honduras',
+  };
+
+  //Pipe: Json
+  heroes = [
+    {
+      nombre: 'Superman',
+      poderes: 'Fuerza y vuela',
+      debilidad: 'criptonita',
+    },
+    {
+      nombre: 'Batman',
+      poderes: 'inteligencia y vuela',
+      debilidad: 'su familia',
+    },
+    {
+      nombre: 'Thor',
+      poderes: 'Mionnirg',
+      debilidad: 'Jenh Foster',
+    },
+    {
+      nombre: 'Aeroman',
+      poderes: 'Inteligencia',
+      debilidad: 'El mismo',
+    },
+    {
+      nombre: 'Viuda Negra',
+      poderes: 'Audaz y combate cuerpo a cuerpo',
+      debilidad: 'sus amigos',
+    },
+  ];
+
   constructor(private primengConfig: PrimeNGConfig) {}
 
   ngOnInit() {

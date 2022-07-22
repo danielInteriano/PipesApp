@@ -45,4 +45,24 @@
       {{ clientes | slice: 0 }}
     </p-fieldset>
   </div>
+
+  <!--KeyValue Pipe-->
+  <!--Permite presentar los atributos de un objeto que se recorre a través de un array *ngFor-->
+  <div class="col col-6">
+    <p-fieldset legend="Pipe: KeyValue" [toggleable]="true">
+      <ul>
+        <li *ngFor="let item of persona | keyvalue">
+          {{ item.key | titlecase }}: <b>{{ item.value }}</b>
+        </li>
+      </ul>
+    </p-fieldset>
+  </div>
+
+  <!--JSON Pipe-->
+  <!--Permite presentar los atributos de un objeto que se recorre a través de un array *ngFor-->
+  <div class="col col-6">
+    <p-fieldset legend="Pipe: JSON" [toggleable]="true">
+      <pre>{{ heroes | json }}</pre>
+    </p-fieldset>
+  </div>
 </div>
